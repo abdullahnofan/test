@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio Website">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my projects and skills</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a [Your Profession]. I specialize in [Your Skills].</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Project Card Example -->
+                <div class="project-card">
+                    <img src="./images/project1.jpg" alt="Project Title 1">
+                    <h3>Project Title 1</h3>
+                    <p>Description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+
+                <!-- Add more project cards as needed -->
+                <div class="project-card">
+                    <img src="./images/project2.jpg" alt="Project Title 2">
+                    <h3>Project Title 2</h3>
+                    <p>Description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+
+                <!-- Example of third project -->
+                <div class="project-card">
+                    <img src="./images/project3.jpg" alt="Project Title 3">
+                    <h3>Project Title 3</h3>
+                    <p>Description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+
+                <!-- Add more projects as needed -->
+
+           </div>
+         </div>
+       </section>
+
+       <!-- Contact Section -->
+       <section id="contact" class="contact">
+         <div class="container">
+           <h2>Contact Me</h2>
+           <form action="#" method="POST" class="contact-form">
+             <input type="text" name="name" placeholder="Your Name" required />
+             <input type="email" name="email" placeholder="Your Email" required />
+             <textarea name="message" placeholder="Your Message" required></textarea>
+             <button type="submit">Send Message</button>
+           </form>
+         </div>
+       </section>
+
+       <!-- Footer -->
+       <footer class="footer">
+         <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+       </footer>
+
+       <!-- Optional JavaScript (if needed) -->
+       <script src="script.js"></script>
+
+   </body>
+   </html>
